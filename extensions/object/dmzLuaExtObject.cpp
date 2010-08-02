@@ -287,7 +287,7 @@ object_set_temporary (lua_State *L) {
 
       if (os->objMod->is_object (*ptr)) {
 
-         os->tempObjects.add_handle (*ptr);
+         os->tempObjects.add (*ptr);
          lua_pushboolean (L, 1);
       }
       else { lua_pushboolean (L, 0); }
@@ -311,7 +311,7 @@ object_unset_temporary (lua_State *L) {
 
       if (os->objMod->is_object (*ptr)) {
 
-         os->tempObjects.remove_handle (*ptr);
+         os->tempObjects.remove (*ptr);
          lua_pushboolean (L, 1);
       }
       else { lua_pushboolean (L, 0); }

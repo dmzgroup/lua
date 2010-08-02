@@ -354,14 +354,14 @@ obs_register (lua_State *L) {
 
    HandleContainer channelList;
 
-   if (channelPtr) { channelList.add_handle (*channelPtr); }
+   if (channelPtr) { channelList.add (*channelPtr); }
    else if (init) {
 
       channelList = config_to_input_channels (*init, lua_get_runtime_context (L));
    }
    else {
 
-      channelList.add_handle (
+      channelList.add (
          Definitions (
             lua_get_runtime_context (L)).create_named_handle (InputChannelDefaultName));
    }

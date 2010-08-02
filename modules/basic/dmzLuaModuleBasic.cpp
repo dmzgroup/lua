@@ -217,7 +217,7 @@ dmz::LuaModuleBasic::update_time_slice (const Float64 DeltaTime) {
 void
 dmz::LuaModuleBasic::add_lua_path (const String &Path) {
 
-   _luaPaths.append (Path);
+   _luaPaths.add (Path);
    _add_lua_paths ();
 }
 
