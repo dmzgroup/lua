@@ -121,15 +121,15 @@ matrix_new (lua_State *L) {
 
          Float64 array[9];
 
-         array[1] = luaL_checknumber (L, 1);
-         array[2] = luaL_checknumber (L, 2);
-         array[3] = luaL_checknumber (L, 3);
-         array[4] = luaL_checknumber (L, 4);
-         array[5] = luaL_checknumber (L, 5);
-         array[6] = luaL_checknumber (L, 6);
-         array[7] = luaL_checknumber (L, 7);
-         array[8] = luaL_checknumber (L, 8);
-         array[9] = luaL_checknumber (L, 9);
+         array[0] = luaL_checknumber (L, 1);
+         array[1] = luaL_checknumber (L, 2);
+         array[2] = luaL_checknumber (L, 3);
+         array[3] = luaL_checknumber (L, 4);
+         array[4] = luaL_checknumber (L, 5);
+         array[5] = luaL_checknumber (L, 6);
+         array[6] = luaL_checknumber (L, 7);
+         array[7] = luaL_checknumber (L, 8);
+         array[8] = luaL_checknumber (L, 9);
 
          ptr->from_array (array);
       }
